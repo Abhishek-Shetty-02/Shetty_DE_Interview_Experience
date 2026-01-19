@@ -127,6 +127,73 @@ Scenario based Questions:
 
 # Interview 07:
 
+**Technical ROUND 01:**
+
+Intro:
+
+Project flow:
+
+1.	which services did you use for batch and steaming sources?
+2. how you were migrating data form bronze to silver?
+3. how scheduling the pipeline?
+4. why didn't you use databricks instead of data factory?
+5. In databricks suppose you have written code, you want share it for Review?
+6. Scenario: 1 File 10 Gb and 10 files 1 GB : cache v/s persistence and Why?
+7. difference between count * and count 1
+8. Explain Materialized view?
+9. Normal views v/s Materialized Views
+10. How you are storing historical data?
+11. Storing Row wise and Column Wise data?
+12. Separate Table
+13. suppose: Table in SQL Capture every operation happened on any row? How
+14. Same In databricks?
+
+**SQL Query:**
+
+1.	Find duplicates
+
+| employee_name | department | salary |
+|---------------|------------|--------|
+| James         | Sales      | 3000   |
+| Michaell      | Sales      | 4600   |
+| Robertl       | Sales      | 4600   |
+| Marial        | Finance    | 3000   |
+| James         | Sales      | 3000   |
+| Scott         | Finance    | 3300   |
+| Jen           | Finance    | 3900   |
+| Jeff          | Marketing  | 3000   |
+| Kumar         | Marketing  | 2000   |
+| Saifi         | Sales      | 4100   |
+| Scotti        | Finance    | 3300   |
+
+**Pyspark**
+
+2. Write a Query for Deleting the Duplicate data: 
+
+Input:
+
+Table A:
+
+1|~abc|~100
+
+2|~ gef|~200
+
+3|~jkl|~300
+
+Output:
+
+Table A
+
+| id | name | value |
+|----|------|-------|
+| 1  | abc  | 100   |
+| 2  | gef  | 200   |
+| 3  | jkl  | 300   |
+
+
+
+# Interview 08: GOT OFFER
+
 **Technical Round 01:**
   
 1.	how do you create flow from streaming source to delta lake?
@@ -280,70 +347,3 @@ Add column salary to emp table
 check whether it's a palindrome or not?
 
 value = "madam"
-
-# Interview 08:
-
-**Technical ROUND 01:**
-
-Intro:
-
-Project flow:
-
-1.	which services did you use for batch and steaming sources?
-2. how you were migrating data form bronze to silver?
-3. how scheduling the pipeline?
-4. why didn't you use databricks instead of data factory?
-5. In databricks suppose you have written code, you want share it for Review?
-6. Scenario: 1 File 10 Gb and 10 files 1 GB : cache v/s persistence and Why?
-7. difference between count * and count 1
-8. Explain Materialized view?
-9. Normal views v/s Materialized Views
-10. How you are storing historical data?
-11. Storing Row wise and Column Wise data?
-12. Separate Table
-13. suppose: Table in SQL Capture every operation happened on any row? How
-14. Same In databricks?
-
-**SQL Query:**
-
-1.	Find duplicates
-
-| employee_name | department | salary |
-|---------------|------------|--------|
-| James         | Sales      | 3000   |
-| Michaell      | Sales      | 4600   |
-| Robertl       | Sales      | 4600   |
-| Marial        | Finance    | 3000   |
-| James         | Sales      | 3000   |
-| Scott         | Finance    | 3300   |
-| Jen           | Finance    | 3900   |
-| Jeff          | Marketing  | 3000   |
-| Kumar         | Marketing  | 2000   |
-| Saifi         | Sales      | 4100   |
-| Scotti        | Finance    | 3300   |
-
-**Pyspark**
-
-2. Write a Query for Deleting the Duplicate data: 
-
-Input:
-
-Table A:
-
-1|~abc|~100
-
-2|~ gef|~200
-
-3|~jkl|~300
-
-Output:
-
-Table A
-
-| id | name | value |
-|----|------|-------|
-| 1  | abc  | 100   |
-| 2  | gef  | 200   |
-| 3  | jkl  | 300   |
-
-
